@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>网站简易索引</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>网站索引</h1>
+      <p class="lead">按标题、描述或标签搜索；可按分类过滤并导出 sitemap.xml。</p>
+    </header>
+
+    <section class="controls">
+      <input id="search" type="search" placeholder="搜索标题、描述或标签..." />
+      <select id="category">
+        <option value="">所有分类</option>
+      </select>
+      <button id="generate-sitemap">生成 sitemap.xml</button>
+    </section>
+
+    <section id="meta" class="meta"></section>
+
+    <section id="list" class="list"></section>
+
+    <nav class="pagination" id="pagination"></nav>
+
+    <footer>
+      <small>数据来源：pages.json — 编辑文件以添加或更新条目。</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
